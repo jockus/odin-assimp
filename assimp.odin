@@ -212,7 +212,7 @@ aiMaterialProperty :: struct {
 	mIndex : u32,
 	mDataLength : u32,
 	mType : aiPropertyTypeInfo,
-	mData :cstring,
+	mData :rawptr,
 }
 aiMaterial :: struct {
 	mProperties : ^^aiMaterialProperty,
