@@ -1,5 +1,5 @@
 rmdir /S /Q assimp
-git clone https://github.com/assimp/assimp.git
+git clone https://github.com/assimp/assimp.git/tree/v4.1.0
 
 rmdir /S /Q include
 mkdir include
