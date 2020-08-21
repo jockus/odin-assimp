@@ -1,11 +1,11 @@
-rem rmdir /S /Q assimp
-rem git clone -b v4.1.0 https://github.com/assimp/assimp
+if exist assimp rmdir /S /Q assimp
+git clone -b v4.1.0 https://github.com/assimp/assimp
 
-rem rmdir /S /Q include
-rem mkdir include
+if exist include rmdir /S /Q include
+mkdir include
 
-rem rmdir /S /Q lib
-rem mkdir lib
+if exist lib rmdir /S /Q lib
+mkdir lib
 		 
 		 rem -DRT_LIBRARY=msvcrt.lib^
 		 rem -DBUILD_SHARED_LIBS=OFF^
